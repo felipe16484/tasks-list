@@ -35,7 +35,8 @@ MAIL_FROM_NAME="Prueba Felipe"
 composer install
 npm install
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate
+php artisan migrate:refresh --seed
 
 php artisan serve / npm run dev
 
